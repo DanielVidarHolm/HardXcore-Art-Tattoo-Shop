@@ -191,6 +191,9 @@ input, select, textarea {
 	br.clear {
 		clear: both;
 	}
+	clear-both {
+		clear: both;
+	}
 
 	hr {
 		position: relative;
@@ -2162,6 +2165,25 @@ input, select, textarea {
 
 /* Wrapper */
 
+.video-wrapper {
+	/* Telling our absolute positioned video to 
+	be relative to this element */
+	position: relative;
+  
+	width: 400px;
+	height: 200px;
+  
+	/* Will not allow the video to overflow the 
+	container */
+	overflow: hidden;
+  
+	/* Centering the container's content vertically 
+	and horizontally */
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
 	.wrapper {
 		background: #fff;
 		margin: 0 0 2em 0;
@@ -2173,10 +2195,13 @@ input, select, textarea {
 		}
 
 /* Header */
+	.bg-image{
+		background-image: url("../../images/header.jpg");
+	}
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
+		/* background-image: url("../../images/header.jpg"); */
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -2194,11 +2219,14 @@ input, select, textarea {
 		}
 
 		#header .inner {
-			position: relative;
+			position: absolute;
 			z-index: 1;
 			margin: 0;
 			display: inline-block;
 			vertical-align: middle;
+			top:25%;
+			right: 37%;
+			color:black
 		}
 
 		#header header {
@@ -2222,13 +2250,11 @@ input, select, textarea {
 
 		#header .button {
 			display: inline-block;
-			border-radius: 100%;
-			width: 4.5em;
-			height: 4.5em;
-			line-height: 4.5em;
+
+			line-height: 2em;
 			text-align: center;
 			font-size: 1.25em;
-			padding: 0;
+			padding: 0.7em 1em;
 		}
 
 		#header hr {
@@ -2291,6 +2317,16 @@ input, select, textarea {
 		z-index: 1;
 		overflow: hidden;
 	}
+	video {
+		/** Simulationg background-size: cover */
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	  
+		position: absolute;
+		top: 0;
+		left: 0;
+	  }
 
 		#nav > ul {
 			line-height: 0px;
@@ -2674,8 +2710,10 @@ input, select, textarea {
 				#header .inner {
 					padding-left: 2em;
 					padding-right: 2em;
+					right:30%
+					
 				}
-
+			
 		/* Banner */
 
 			#banner {
@@ -2689,6 +2727,7 @@ input, select, textarea {
 				padding-left: 2em;
 				padding-right: 2em;
 			}
+			
 
 	}
 
@@ -2713,6 +2752,7 @@ input, select, textarea {
 				display: block;
 				text-align: center;
 			}
+			
 
 		/* Footer */
 
@@ -2730,7 +2770,12 @@ input, select, textarea {
 					width: 18em;
 					margin: 0 1em 0 0;
 				}
+				#header .inner {
+					left:0;
+					right:0;
 
+					
+				}
 	}
 
 /* Mobile */
