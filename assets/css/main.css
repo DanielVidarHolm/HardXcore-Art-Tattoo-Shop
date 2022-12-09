@@ -1942,14 +1942,19 @@ input, select, textarea {
 				}
 
 /* Form */
-
+	.w-50{
+		width:50% !important;
+	}
+	.center{
+		margin: 0 auto !important;
+	}
 	form label {
 		display: block;
 		font-weight: 400;
 		color: #483949;
 		margin: 0 0 1em 0;
 	}
-
+	
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
