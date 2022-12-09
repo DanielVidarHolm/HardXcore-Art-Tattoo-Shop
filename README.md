@@ -4,7 +4,7 @@ A Business website for a reputable Tattoo parlor, Shows of the work from the art
 
 **Link to project:** https://hardxcore.netlify.app/
 
-![alt tag](![Uploading HardXcore Preview.gif…]())
+https://ibb.co/0XbFhxf
 
 ## How It's Made:
 
